@@ -1,6 +1,8 @@
 import {Component} from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Items from "./components/Items";
+import Item from "./components/Item";
 
 class App extends Component {
   constructor(props) {
@@ -26,8 +28,8 @@ class App extends Component {
         {
           id: 3,
           title: 'Стул серый',
-          img: '3.jpg',
-          desc: 'Серое кресло для гостинной в стиле ложт',
+          img: '3.png',
+          desc: 'Серое кресло для гостинной в стиле лофт',
           category: 'chairs',
           price: '299.99'
         },
@@ -47,6 +49,14 @@ class App extends Component {
           category: 'tables',
           price: '49.99'
         },
+        {
+          id: 6,
+          title: 'Стол офисный',
+          img: '6.jpg',
+          desc: 'Стильный минималистичный стол для вашего офиса',
+          category: 'tables',
+          price: '169.99'
+        }
       ]
     }
   }
