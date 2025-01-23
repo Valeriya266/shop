@@ -2,7 +2,7 @@ import {Component} from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Items from "./components/Items";
-import Item from "./components/Item";
+
 
 class App extends Component {
   constructor(props) {
