@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {FaShoppingCart} from "react-icons/fa"
 import Order from './Order';
 
 const showOrders = (props) => {
@@ -31,7 +31,7 @@ export default function Header(props) {
                 <li>Контакты</li>
                 <li>Кабинет</li>
               </ul>
-              <FaShoppingCart/>
+              <FaShoppingCart className='shop-cart-button'/>
   
               {cartOpen && (
                 <div className='shop-cart'>

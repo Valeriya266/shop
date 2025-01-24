@@ -94,6 +94,16 @@ header .shop-cart .summa{
     margin-bottom: 20px;
 }
 
+header .shop-cart-button {
+    float: right;
+    cursor: pointer;
+    transition: color 500ms ease;
+}
+
+header .shop-cart-button:hover {
+    color: #dc3d3d;
+}
+
 header .presentation {
     margin: 50px 0;
     background: url("./components/img/3464.jpg");
