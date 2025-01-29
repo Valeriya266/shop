@@ -1,7 +1,7 @@
-import React, {Components} from 'react'
+import React, {Component} from 'react'
 import {FaTrash} from 'react-icons/fa'
 
-class Order extends Components {
+class Order extends Component {
     render() {
         return (
             <div className='item'>
