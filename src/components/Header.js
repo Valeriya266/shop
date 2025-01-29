@@ -31,14 +31,6 @@ export default function Header(props) {
                 <li>Контакты</li>
                 <li>Кабинет</li>
               </ul>
-              <FaShoppingCart className='shop-cart-button'/>
-  
-              {cartOpen && (
-                <div className='shop-cart'>
-                  {props.orders.length > 0 ?
-                    showOrders(props) : showNothing()}
-                </div>
-              )}
           </div>    
           <div className='presentation'></div>
       </header>
