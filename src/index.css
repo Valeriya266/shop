@@ -58,7 +58,6 @@ header .shop-cart {
     top: 30px;
     right: 0;
     width: 450px;
-    min-height: 100px;
     background: #fafafa;
     -webkit-box-shadow: 4px 5px 15px -7px #606060;
     box-shadow: 4px 5px 15px -7px #606060;
@@ -83,7 +82,6 @@ header .shop-cart .item img {
     width: 70px;
     float: left;
     margin-right: 20px;
-    
 }
 
 header .shop-cart .item h2 {
