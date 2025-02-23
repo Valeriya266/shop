@@ -16,7 +16,7 @@ class App extends Component {
         {
           id: 1,
           title: 'Кресло черное',
-          img: '1.jpg',
+          img: 'black_leather.jpeg',
           desc: 'Дизайнерское кресло с кожаными вставками',
           category: 'chairs',
           price: '129.99'
@@ -24,7 +24,7 @@ class App extends Component {
         {
           id: 2,
           title: 'Кресло желтое',
-          img: '2.jpg',
+          img: 'yellow.jpeg',
           desc: 'Мягкое комфортное кресло из желтого велюра',
           category: 'chairs',
           price: '89.99'
@@ -32,7 +32,7 @@ class App extends Component {
         {
           id: 3,
           title: 'Стул серый',
-          img: '3.png',
+          img: '3.jpeg',
           desc: 'Серое кресло для гостинной в стиле лофт',
           category: 'chairs',
           price: '299.99'
@@ -40,7 +40,7 @@ class App extends Component {
         {
           id: 4,
           title: 'Диван оранжевый',
-          img: '4.jpg',
+          img: '4.jpeg',
           desc: 'Комфортный диван из оранжевой замши',
           category: 'sofa',
           price: '399.99'
@@ -48,7 +48,7 @@ class App extends Component {
         {
           id: 5,
           title: 'Столик придвижной',
-          img: '5.jpg',
+          img: '5.jpeg',
           desc: 'Столик многоуровневый для любого интерьера',
           category: 'tables',
           price: '49.99'
@@ -56,10 +56,18 @@ class App extends Component {
         {
           id: 6,
           title: 'Стол офисный',
-          img: '6.jpg',
+          img: '6.jpeg',
           desc: 'Стильный минималистичный стол для вашего офиса',
           category: 'tables',
           price: '169.99'
+        },
+        {
+          id: 7,
+          title: 'Лампа напольная',
+          img: 'light-loft.jpeg',
+          desc: 'Лаконичная напольная лампа для лофт-интерьера',
+          category: 'light',
+          price: '105.99'
         }
       ],
       showFullItem: false,
@@ -93,6 +101,7 @@ class App extends Component {
   chooseCategory(category) {
     if (category === 'all') {
       this.setState({currentItems: this.state.items})
+      return
     }
 
     this.setState({currentItems: this.state.items.filter(el => el.category === category )})
