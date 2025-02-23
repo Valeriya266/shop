@@ -56,7 +56,7 @@ class App extends Component {
         {
           id: 6,
           title: 'Стол офисный',
-          img: '6.jpeg',
+          img: 'table-office.jpeg',
           desc: 'Стильный минималистичный стол для вашего офиса',
           category: 'tables',
           price: '169.99'
