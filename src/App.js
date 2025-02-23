@@ -16,7 +16,7 @@ class App extends Component {
         {
           id: 1,
           title: 'Кресло черное',
-          img: 'black_leather.jpeg',
+          img: 'black-leather.jpeg',
           desc: 'Дизайнерское кресло с кожаными вставками',
           category: 'chairs',
           price: '129.99'
