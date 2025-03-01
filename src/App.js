@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Items from "./components/Items";
 import Categories from './components/Categories';
 import ShowFullItem from './components/ShowFullItem';
+import Modal from './components/Modal';
 
 
 class App extends Component {
@@ -71,26 +72,32 @@ class App extends Component {
         }
       ],
       showFullItem: false,
-      fullItem: {}
+      fullItem: {},
+      showModal: false
     }
     this.state.currentItems = this.state.items;
     this.addToOrder = this.addToOrder.bind(this)
     this.deleteOrder = this.deleteOrder.bind(this)
     this.chooseCategory = this.chooseCategory.bind(this)
     this.onShowItem = this.onShowItem.bind(this)
+    this.onShowModal = this.onShowModal.bind(this)
   }
 
   render () {
     return (
       <div className="wrapper">
-        <Header orders={this.state.orders} onDelete={this.deleteOrder}/>
+        <Header orders={this.state.orders} onDelete={this.deleteOrder} onShowModal={this.onShowModal}/>
         <Categories chooseCategory={this.chooseCategory}/>
         <Items onShowItem={this.onShowItem} items={this.state.currentItems} onAdd={this.addToOrder}/>
-
+        {this.state.showModal && <Modal onShowModal={this.onShowModal}/>}
         {this.state.showFullItem && <ShowFullItem onShowItem={this.onShowItem} onAdd={this.addToOrder} item={this.state.fullItem}/>}
         <Footer />
       </div>
     );
+  }
+
+  onShowModal() {
+    this.setState({showModal: !this.state.showModal})
   }
 
   onShowItem(item) {

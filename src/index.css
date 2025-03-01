@@ -177,7 +177,7 @@ header .presentation:before {
     transform: scale(1.1);
 }
 
-.full-item {
+.full-item, .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -188,7 +188,7 @@ header .presentation:before {
     overflow: auto;
 }
 
-.full-item > div {
+.full-item, .modal > div {
     width: 500px;
     position: relative;
     margin: 10% auto;
