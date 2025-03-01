@@ -189,12 +189,12 @@ header .presentation:before {
 }
 
 .full-item > div {
-    width: 600px;
+    width: 500px;
     position: relative;
     margin: 10% auto;
-    padding: 40px 30px;
+    padding: 40px 40px;
     background: #fff;
-    border-radius: 9px;
+    border-radius: 10px;
 }
 
 main {
@@ -235,7 +235,8 @@ main b, .full-item b {
     color: #5fa36a;
 }
 
-main .add-to-cart {
+main .add-to-cart,
+.full-item .add-to-cart{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -251,8 +252,9 @@ main .add-to-cart {
     transition: transform 500ms ease;
 }
 
-main .add-to-cart:hover {
-    transform: scale(1.05) translateY(-5px);   
+main .add-to-cart:hover,
+.full-item .add-to-cart:hover {
+    transform: scale(1.5) translateY(-5px);   
 }
 
 footer {
