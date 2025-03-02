@@ -23,7 +23,6 @@ const showNothing = () => {
 
 export default function Header(props) {
   let [cartOpen, setCartOpen] = useState(false);
-  let [modalOpen, setModalOpen] = useState(false);
 
     return (
       <header>
@@ -31,7 +30,7 @@ export default function Header(props) {
               <span className='logo'>House Staff</span>
               <ul className='nav'>
                 <li>Про нас</li>
-                <li onClick={() => setModalOpen(modalOpen = !modalOpen)}>Контакты</li>
+                <li onClick={() => this.props.onShowModal()}>Контакты</li>
                 <li>Кабинет</li>
               </ul>
               <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`}/>
