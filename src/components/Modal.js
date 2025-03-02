@@ -1,14 +1,10 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class Modal extends Component {
-    render() {
-        return (
-            <div className='modal'>
-                <div> Модальное окно
-                </div>
+export default function Modal () {
+    return (
+        <div className='modal'>
+            <div> Модальное окно
             </div>
-          )
-    }
+        </div>
+      )
 }
-
-export default Modal;
