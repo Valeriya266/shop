@@ -23,13 +23,14 @@ const showNothing = () => {
 
 export default function Header(props) {
   let [cartOpen, setCartOpen] = useState(false);
+  let [infShow, setInfShow] = useState(false);
 
     return (
       <header>
           <div>
               <span className='logo'>House Staff</span>
               <ul className='nav'>
-                <li>Про нас</li>
+                <li onClick={() => setInfShow(infShow = !infShow)}>Про нас</li>
                 <li>Контакты</li>
                 <li>Кабинет</li>
               </ul>
@@ -41,6 +42,12 @@ export default function Header(props) {
                     showOrders(props) : showNothing()}
                 </div>
                )} 
+
+               {infShow && (
+                <div className='inf-cart'>
+                  <div>Мы - команда профессионалов с своём деле. Последние тенденции в дизайне интрерьера, широкий спектр выбора моделей для любого интерьера.</div>
+                </div>
+               )}
           </div>    
           <div className='presentation'></div>
       </header>

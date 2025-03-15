@@ -67,6 +67,21 @@ header .shop-cart {
     padding-bottom: 0px;
 }
 
+header .inf-cart {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    left: 640px;
+    width: 400px;
+    border-radius: 20px;
+    background: #fafafa;
+    -webkit-box-shadow: 4px 5px 15px -7px #606060;
+    box-shadow: 4px 5px 15px -7px #606060;
+    z-index: 1000;
+
+    padding: 20px;
+}
+
 header .shop-cart .empty h2 {
     font-size: 20px;
     margin-bottom: 20px;
