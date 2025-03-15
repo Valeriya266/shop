@@ -30,7 +30,7 @@ export default function Header(props) {
               <span className='logo'>House Staff</span>
               <ul className='nav'>
                 <li>Про нас</li>
-                <li onClick={() => this.props.onShowModal()}>Контакты</li>
+                <li>Контакты</li>
                 <li>Кабинет</li>
               </ul>
               <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`}/>
